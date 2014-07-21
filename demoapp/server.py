@@ -34,7 +34,6 @@ class DemoServer(TCPServer):
         print 'Demo server starting on port %d.' % self.server_address[1]
         try:
             server.serve_forever()
-            exit(0)
         except KeyboardInterrupt:
             server.server_close()
         print 'Demo server stopped.'
@@ -44,9 +43,7 @@ if __name__ == '__main__':
     import sys
     try:
         server = DemoServer(*sys.argv[1:])
-        exit(0)
     except (TypeError, ValueError):
         print __doc__
     else:
         server.serve()
-        exit(0)

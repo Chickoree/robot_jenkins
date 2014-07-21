@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20140721 14:41:28.097" generator="Robot 2.8.4 (Python 2.7.5 on darwin)">
+<suite source="/Users/matthewchickoree/Documents/workspace/webdemo/login_tests/valid_login.txt" id="s1" name="Valid Login">
+<test id="s1-t1" name="Valid Login">
+<kw type="kw" name="resource.Open Browser To Login Page">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="Selenium2Library.Open Browser">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${LOGIN URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20140721 14:41:28.186" level="INFO">Opening browser 'Firefox' to base url 'http://localhost:7272/'</msg>
+<status status="PASS" endtime="20140721 14:41:30.610" starttime="20140721 14:41:28.186"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Maximize Browser Window">
+<doc>Maximizes current browser window.</doc>
+<arguments>
+</arguments>
+<status status="PASS" endtime="20140721 14:41:30.983" starttime="20140721 14:41:30.611"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Set Selenium Speed">
+<doc>Sets the delay in seconds that is waited after each Selenium command.</doc>
+<arguments>
+<arg>${DELAY}</arg>
+</arguments>
+<status status="PASS" endtime="20140721 14:41:30.983" starttime="20140721 14:41:30.983"></status>
+</kw>
+<kw type="kw" name="resource.Login Page Should Be Open">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="Selenium2Library.Title Should Be">
+<doc>Verifies that current page title equals `title`.</doc>
+<arguments>
+<arg>Login Page</arg>
+</arguments>
+<kw type="kw" name="Selenium2Library.Capture Page Screenshot">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<arguments>
+</arguments>
+<msg timestamp="20140721 14:41:31.060" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20140721 14:41:31.060" starttime="20140721 14:41:30.998"></status>
+</kw>
+<msg timestamp="20140721 14:41:31.060" level="FAIL">Title should have been 'Login Page' but was 'Problem loading page'</msg>
+<status status="FAIL" endtime="20140721 14:41:31.060" starttime="20140721 14:41:30.984"></status>
+</kw>
+<status status="FAIL" endtime="20140721 14:41:31.061" starttime="20140721 14:41:30.983"></status>
+</kw>
+<status status="FAIL" endtime="20140721 14:41:31.061" starttime="20140721 14:41:28.186"></status>
+</kw>
+<kw type="teardown" name="Selenium2Library.Close Browser">
+<doc>Closes the current browser.</doc>
+<arguments>
+</arguments>
+<status status="PASS" endtime="20140721 14:41:31.099" starttime="20140721 14:41:31.061"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="FAIL" endtime="20140721 14:41:31.099" critical="yes" starttime="20140721 14:41:28.185">Title should have been 'Login Page' but was 'Problem loading page'</status>
+</test>
+<doc>A test suite with a single test for valid login.
+
+This test has a workflow that is created using keywords in
+the imported resource file.</doc>
+<metadata>
+</metadata>
+<status status="FAIL" endtime="20140721 14:41:31.100" starttime="20140721 14:41:28.097"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="1" pass="0">Critical Tests</stat>
+<stat fail="1" pass="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="1" pass="0" id="s1" name="Valid Login">Valid Login</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

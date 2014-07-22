@@ -1,3 +1,1 @@
-#!/bin/bash
-
-demoapp/server.py &
+demoapp/server.py

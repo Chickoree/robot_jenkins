@@ -1,3 +1,3 @@
 #!/bin/bash
 
-nohup demoapp/server.py &
+demoapp/server.py &

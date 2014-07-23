@@ -25,3 +25,5 @@ Create Github Application Token :
 	* Newly created tokenCopy the token to your clipboard. For security reasons, after you navigate off this page, no one will be able to see the token again.	
 Setup robot output files directory
 
+Issues with hook URL ... need to change server address from localhost?
+
